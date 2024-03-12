@@ -10,7 +10,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 # page connecting 
 data_med = conn.read(worksheet="ข้อมูลยา", ttl=5)
 data_med  = data_med.dropna(how="all")
-data_info = conn.read(worksheet="รายชื่อนักเรียนหอพัก64-66 ", ttl=5)
+data_info = conn.read(worksheet="รายชื่อนักเรียนหอพัก", ttl=5)
 data_info = data_info.dropna(how="all")
 data_ill = conn.read(worksheet="ข้อมูลโรค", ttl=5)
 data_ill = data_ill.dropna(how="all")
