@@ -1,4 +1,2 @@
-!pip3 install --upgrade pip
-!pip install pandas
-!pip install numpy
-!pip install plotly-express
+pandas
+plotly-express
